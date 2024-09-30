@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+main{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 2px 2px 10px 1px #c4c4c4;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    img{
+        width: 300px;
+    }
+}
+
+.inputLabel{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 5px;
+}
+
+input{
+    width: 20%;
+    padding: 7px;
+    margin: 10px;
+    outline: none;
+    border:.3px solid #082142;
+    color: #082142;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+input::placeholder{
+    font-size: 20px;
+    color: #c4c4c4;
+}
+
+
+.label{
+    width: 90%;
+    background-color: #082142;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#calcular{
+    width: 100%;
+    background-color: #082142;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    box-shadow: 2px 2px 2px #c4c4c4;
+}
+
+#calcular:hover{
+    background-color: #00357a;
+    box-shadow: none;
+    transition: all .3s;
+}
+.medias{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#media{
+    padding: 10px;
+    width: 48%;
+    font-size: 17px;
+    background-color: #082142;
+    color:#ffffff;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+}
+#notaNecessaria{
+    padding: 10px;
+    width: 48%;
+    font-size: 17px;
+    background-color:#f16304 ;
+    color:#ffffff;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+#hr{
+    height: 1px;
+    margin: 10px;
+    background-color: #f16304;
+    color: #f16304;
+    border: none;
+}
+
+#instrucoes{
+    background-color: #082142;
+    width: 50%;
+    border: none;
+}

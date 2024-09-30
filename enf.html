@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfermagem</title>
+    <link rel="stylesheet" href="enf.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="card-foto"><img src="https://app.fanex.com.br/assets/erp/0029/logo.png" alt=""></div>
+            <form action="">
+                <div class="label"><label for="">Valor de Unidade</label></div>
+                <div class="inputLabel"> Unidade I<input type="number" required id="unidadeI"></div>
+                <div class="inputLabel">Unidade II<input type="number" required id="unidadeII"></div>
+                <div class="inputLabel">Unidade III<input type="number" required id="unidadeIII"></div>
+                <div class="inputLabel"> Unidade IV<input type="number" required id="unidadeIV"></div>
+                <div class="label"><label for="">Valor de Prova N2</label></div>
+                <div class="inputLabel">Prova N2<input type="number" required id="provaN2"></div>
+                <input type="submit" onclick="Calcular(event)" id="calcular" value="Calcular">
+
+                <hr id="hr">
+                <div class="medias">
+                    <div id="media"></div>
+                    <div id="notaNecessaria"></div>
+                </div>
+            </form>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="instrucoes">
+                Ler as instruções
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Sobre</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <p style="color: black; font-size: 20px;">As notas das unidades têm o valor máximo de 10 pontos. Assim, se a primeira unidade tiver 10 questões, cada uma valerá 1 ponto. Da mesma forma, a prova N2 também será avaliada em um total de 10 pontos.</p>
+                           <br>
+                           <p> coloque todos os dados corretos!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Entendi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="enf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
